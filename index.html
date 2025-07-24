@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo - Player vs Computer</title>
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>🎯 Bingo Game: Player vs Computer</h1>
+<div id="turnLabel">Player 1's Turn</div>
+
+<div style="margin-top: 15px;">
+  <input type="number" id="numberInput" placeholder="Enter number (1–25)" min="1" max="25"  >
+  <button onclick="submitNumber()">Submit</button>
+  <button onclick="restartGame()">Restart</button>
+</div>
+
+<div class="board-container">
+  <div>
+    <div class="label">Player 1</div>
+    <div id="board1" class="board"></div>
+  </div>
+  <div>
+    <div class="label">Player 2 (Computer)</div>
+    <div id="board2" class="board hidden-board"></div>
+  </div>
+</div>
+
+<div id="result"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
